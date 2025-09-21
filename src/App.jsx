@@ -4,6 +4,7 @@ import AvailablePlayers from "./Components/AvailablePlayers";
 import SelectedPlayers from "./Components/SelectedPlayers";
 import Skeleton from "./Components/Skeleton";
 import SelectedSkeleton from "./Components/SelectedSkeleton";
+import { ToastContainer, toast } from "react-toastify";
 import { Suspense, useState } from "react";
 
 const fetchPlayers = async () => {
@@ -38,7 +39,14 @@ function App() {
     );
     setChosePlayers(filteredPlayersData);
     setAvailableBalance(availableBalance + player.price);
-    console.log(player);
+    // console.log(player);
+    toast.error(`You have removed ${player.name}`, {
+      style: { background: "#1E2A3B", color: "white" },
+      icon: (
+        <i className="fa-solid fa-heart-crack" style={{ color: "#E74D3C" }}></i>
+      ),
+      progressStyle: { background: "red" },
+    });
   };
 
   return (
@@ -92,6 +100,8 @@ function App() {
           </Suspense>
         )}
       </div>
+
+      <ToastContainer position="top-center" newestOnTop={true} />
     </div>
   );
 }

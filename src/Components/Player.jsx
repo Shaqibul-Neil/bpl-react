@@ -1,6 +1,7 @@
 import playerIcon from "../assets/player.png";
 import flagIcon from "../assets/flag.png";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Player = ({
   player,
@@ -9,9 +10,6 @@ const Player = ({
   chosePlayers,
   setChosePlayers,
 }) => {
-  const [showWarningToast, setShowWarningToast] = useState(false);
-  const [showSuccessToast, setShowSuccessToast] = useState(false);
-
   const isSelected = chosePlayers.find(
     (chosePlayer) => chosePlayer.id === player.id
   );
@@ -21,15 +19,36 @@ const Player = ({
       setAvailableBalance((prev) => prev - playerData.price);
       const newPlayers = [...chosePlayers, playerData];
       setChosePlayers(newPlayers);
-      setShowSuccessToast(true);
-      setTimeout(() => {
-        setShowSuccessToast(false);
-      }, 3000);
+      toast.success(`Congratulations! You've selected ${playerData.name}`, {
+        style: { background: "#1E2A3B", color: "white" },
+        icon: (
+          <i
+            className="fa-solid fa-thumbs-up fa-bounce"
+            style={{ color: "#58ff58" }}
+          ></i>
+        ),
+        progressStyle: { background: "red" },
+      });
     } else {
-      setShowWarningToast(true);
-      setTimeout(() => {
-        setShowWarningToast(false);
-      }, 3000);
+      availableBalance <= playerData.price
+        ? toast.error(`You don't have enough coins to choose a player`, {
+            style: { background: "#E74D3C", color: "white" },
+            icon: (
+              <i
+                className="fa-solid fa-triangle-exclamation fa-bounce"
+                style={{ color: "white" }}
+              ></i>
+            ),
+          })
+        : toast.error(`You've already selected your desired six`, {
+            style: { background: "#E74D3C", color: "white" },
+            icon: (
+              <i
+                className="fa-solid fa-triangle-exclamation fa-bounce"
+                style={{ color: "white" }}
+              ></i>
+            ),
+          });
     }
   };
 
@@ -84,27 +103,6 @@ const Player = ({
           </div>
         </div>
       </div>
-      {/* toast conditionally render */}
-      {showSuccessToast && (
-        <div className="toast toast-top toast-center z-100 animate-bounce">
-          <div className="alert alert-success">
-            <span className="font-semibold text-lg">
-              Congratulations! You have selected {player.name}
-            </span>
-          </div>
-        </div>
-      )}
-      {showWarningToast && (
-        <div className="toast toast-top toast-center z-100 animate-bounce">
-          <div className="alert alert-warning">
-            <span className="font-semibold text-lg">
-              {availableBalance <= player.price
-                ? ` You don't have sufficient coins to purchase`
-                : `You have already selected your desired six`}
-            </span>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
