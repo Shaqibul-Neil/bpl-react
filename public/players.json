@@ -1,7 +1,18 @@
 [
   {
-    "id": 1,
-    "image": "https://i.ibb.co.com/999TgLCK/Mustafizur-Rahman-1-NOW.webp",
+    "id": "2Q3r4S5t6U7v",
+    "image": "https://i.ibb.co.com/TB8dWvLw/c7ffff60-e542-11ef-b52b-2f7aceb40199.jpg",
+    "name": "Steven Smith",
+    "country": "Australia",
+    "playing_role": "Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Legbreak",
+    "rating": 99,
+    "price": 2100000
+  },
+  {
+    "id": "1a2B3c4D5e6F",
+    "image": "https://i.ibb.co/999TgLCK/Mustafizur-Rahman-1-NOW.webp",
     "name": "Mustafizur Rahman",
     "country": "Bangladesh",
     "playing_role": "Bowler",
@@ -11,8 +22,8 @@
     "price": 1450000
   },
   {
-    "id": 2,
-    "image": "https://i.ibb.co.com/XZvBJtLV/tamim-iqbal-daily-sun.jpg",
+    "id": "7G8h9I0j1K2L",
+    "image": "https://i.ibb.co/XZvBJtLV/tamim-iqbal-daily-sun.jpg",
     "name": "Mushfiqur Rahim",
     "country": "Bangladesh",
     "playing_role": "Wicketkeeper Batsman",
@@ -22,8 +33,8 @@
     "price": 1400000
   },
   {
-    "id": 3,
-    "image": "https://i.ibb.co.com/tpfZRwGf/Taskin-ds.jpg",
+    "id": "3M4n5O6p7Q8r",
+    "image": "https://i.ibb.co/tpfZRwGf/Taskin-ds.jpg",
     "name": "Taskin Ahmed",
     "country": "Bangladesh",
     "playing_role": "Bowler",
@@ -33,8 +44,8 @@
     "price": 900000
   },
   {
-    "id": 4,
-    "image": "https://i.ibb.co.com/GvyqF0PT/Tawhid-Hridoy.jpg",
+    "id": "9S0t1U2v3W4x",
+    "image": "https://i.ibb.co/GvyqF0PT/Tawhid-Hridoy.jpg",
     "name": "Towhid Hridoy",
     "country": "Bangladesh",
     "playing_role": "Batsman",
@@ -44,8 +55,8 @@
     "price": 1200000
   },
   {
-    "id": 5,
-    "image": "https://i.ibb.co.com/zVhNdJMb/1752774156.jpg",
+    "id": "5Y6z7A8b9C0d",
+    "image": "https://i.ibb.co/zVhNdJMb/1752774156.jpg",
     "name": "Andre Russell",
     "country": "West Indies",
     "playing_role": "All-Rounder",
@@ -55,8 +66,8 @@
     "price": 1850000
   },
   {
-    "id": 6,
-    "image": "https://i.ibb.co.com/0yxZxVPR/gayle.webp",
+    "id": "2E3f4G5h6I7j",
+    "image": "https://i.ibb.co/0yxZxVPR/gayle.webp",
     "name": "Chris Gayle",
     "country": "West Indies",
     "playing_role": "Batsman",
@@ -66,8 +77,8 @@
     "price": 1900000
   },
   {
-    "id": 7,
-    "image": "https://i.ibb.co.com/qY4PtMbC/152559227.webp",
+    "id": "8K9l0M1n2O3p",
+    "image": "https://i.ibb.co/qY4PtMbC/152559227.webp",
     "name": "Kieron Pollard",
     "country": "West Indies",
     "playing_role": "All-Rounder",
@@ -77,8 +88,8 @@
     "price": 1700000
   },
   {
-    "id": 8,
-    "image": "https://i.ibb.co.com/Txr0TfsR/Jos-Buttler-highlights-on-BCCIs-new-family-rule.webp",
+    "id": "4Q5r6S7t8U9v",
+    "image": "https://i.ibb.co/Txr0TfsR/Jos-Buttler-highlights-on-BCCIs-new-family-rule.webp",
     "name": "Jos Buttler",
     "country": "England",
     "playing_role": "Wicketkeeper Batsman",
@@ -88,8 +99,8 @@
     "price": 1800000
   },
   {
-    "id": 9,
-    "image": "https://i.ibb.co.com/pjjfWd0j/cover-1651140312-Untitled-1.jpg",
+    "id": "0W1x2Y3z4A5b",
+    "image": "https://i.ibb.co/pjjfWd0j/cover-1651140312-Untitled-1.jpg",
     "name": "Ben Stokes",
     "country": "England",
     "playing_role": "All-Rounder",
@@ -99,8 +110,8 @@
     "price": 1750000
   },
   {
-    "id": 10,
-    "image": "https://i.ibb.co.com/YFDkqHTB/Eoin-Morgan-1.jpg",
+    "id": "6C7d8E9f0G1h",
+    "image": "https://i.ibb.co/YFDkqHTB/Eoin-Morgan-1.jpg",
     "name": "Eoin Morgan",
     "country": "England",
     "playing_role": "Batsman",
@@ -110,8 +121,8 @@
     "price": 1600000
   },
   {
-    "id": 11,
-    "image": "https://i.ibb.co.com/xth8qVhb/departing-david-warner-confirms-his-odi-retirement-v0-xqx-IRtygj-Rd-RMn-Q2-YO8c-V-HYv-WTBgct-H197-Gz.webp",
+    "id": "2I3j4K5l6M7n",
+    "image": "https://i.ibb.co/xth8qVhb/departing-david-warner-confirms-his-odi-retirement-v0-xqx-IRtygj-Rd-RMn-Q2-YO8c-V-HYv-WTBgct-H197-Gz.webp",
     "name": "David Warner",
     "country": "Australia",
     "playing_role": "Batsman",
@@ -121,8 +132,8 @@
     "price": 1800000
   },
   {
-    "id": 12,
-    "image": "https://i.ibb.co.com/ZzQLVxCx/Glenn-Maxwell-thumbnail.jpg",
+    "id": "8O9p0Q1r2S3t",
+    "image": "https://i.ibb.co/ZzQLVxCx/Glenn-Maxwell-thumbnail.jpg",
     "name": "Glenn Maxwell",
     "country": "Australia",
     "playing_role": "All-Rounder",
@@ -132,8 +143,8 @@
     "price": 1750000
   },
   {
-    "id": 13,
-    "image": "https://i.ibb.co.com/ccLB3VDT/images.jpg",
+    "id": "4U5v6W7x8Y9z",
+    "image": "https://i.ibb.co/ccLB3VDT/images.jpg",
     "name": "Aaron Finch",
     "country": "Australia",
     "playing_role": "Batsman",
@@ -143,8 +154,8 @@
     "price": 1600000
   },
   {
-    "id": 14,
-    "image": "https://i.ibb.co.com/Q7P3gC96/pat-cummins-becomes-captain-b44c847b-84e5-464c-af2b-2877eb4beb1e.webp",
+    "id": "0A1b2C3d4E5f",
+    "image": "https://i.ibb.co/Q7P3gC96/pat-cummins-becomes-captain-b44c847b-84e5-464c-af2b-2877eb4beb1e.webp",
     "name": "Pat Cummins",
     "country": "Australia",
     "playing_role": "Bowler",
@@ -154,8 +165,8 @@
     "price": 1500000
   },
   {
-    "id": 15,
-    "image": "https://i.ibb.co.com/Fb3vhmth/skysports-chris-woakes-england-vs-west-indies-6626105.jpg",
+    "id": "6G7h8I9j0K1l",
+    "image": "https://i.ibb.co/Fb3vhmth/skysports-chris-woakes-england-vs-west-indies-6626105.jpg",
     "name": "Chris Woakes",
     "country": "England",
     "playing_role": "All-Rounder",
@@ -165,8 +176,8 @@
     "price": 1400000
   },
   {
-    "id": 16,
-    "image": "https://i.ibb.co.com/9mnWpfQx/cricket-WIS-ENG-4-TH-T20-I-18-1643635832339-1643635853548.jpg",
+    "id": "2M3n4O5p6Q7r",
+    "image": "https://i.ibb.co/9mnWpfQx/cricket-WIS-ENG-4-TH-T20-I-18-1643635832339-1643635853548.jpg",
     "name": "Jason Holder",
     "country": "West Indies",
     "playing_role": "All-Rounder",
@@ -176,8 +187,8 @@
     "price": 1250000
   },
   {
-    "id": 17,
-    "image": "https://i.ibb.co.com/Q31xgK7z/skysports-shai-hope-windies-hundred-4086531.jpg",
+    "id": "8S9t0U1v2W3x",
+    "image": "https://i.ibb.co/Q31xgK7z/skysports-shai-hope-windies-hundred-4086531.jpg",
     "name": "Shai Hope",
     "country": "West Indies",
     "playing_role": "Batsman",
@@ -187,8 +198,8 @@
     "price": 1200000
   },
   {
-    "id": 18,
-    "image": "https://i.ibb.co.com/VcbGgcLW/skysports-sam-billings-billings-5179578.jpg",
+    "id": "4Y5z6A7b8C9d",
+    "image": "https://i.ibb.co/VcbGgcLW/skysports-sam-billings-billings-5179578.jpg",
     "name": "Sam Billings",
     "country": "England",
     "playing_role": "Wicketkeeper Batsman",
@@ -198,8 +209,8 @@
     "price": 1100000
   },
   {
-    "id": 19,
-    "image": "https://i.ibb.co.com/XrGJK4Q0/starc-finishes-as-australias-second-highest-wicket-taker-in-the-format-behind-only-adam-zampa.webp",
+    "id": "0E1f2G3h4I5j",
+    "image": "https://i.ibb.co/XrGJK4Q0/starc-finishes-as-australias-second-highest-wicket-taker-in-the-format-behind-only-adam-zampa.webp",
     "name": "Mitchell Starc",
     "country": "Australia",
     "playing_role": "Bowler",
@@ -209,8 +220,8 @@
     "price": 1550000
   },
   {
-    "id": 20,
-    "image": "https://i.ibb.co.com/hR7fsFdN/305555-6.webp",
+    "id": "6K7l8M9n0O1p",
+    "image": "https://i.ibb.co/hR7fsFdN/305555-6.webp",
     "name": "Roston Chase",
     "country": "West Indies",
     "playing_role": "All-Rounder",

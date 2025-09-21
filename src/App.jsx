@@ -9,7 +9,7 @@ import { Suspense, useState } from "react";
 const fetchPlayers = async () => {
   try {
     //5 second delay
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
     const res = await fetch("/players.json");
     const json = await res.json();
@@ -28,10 +28,18 @@ function App() {
   //toggling
   const [toggle, setToggle] = useState(true);
   //available balance
-  const [availableBalance, setAvailableBalance] = useState(6000000);
+  const [availableBalance, setAvailableBalance] = useState(8500000);
   //selecting players
   const [chosePlayers, setChosePlayers] = useState([]);
-  console.log(chosePlayers);
+
+  const handleRemove = (player) => {
+    const filteredPlayersData = chosePlayers.filter(
+      (chosePlayer) => chosePlayer.id !== player.id
+    );
+    setChosePlayers(filteredPlayersData);
+    setAvailableBalance(availableBalance + player.price);
+    console.log(player);
+  };
 
   return (
     <div className="container">
@@ -76,7 +84,11 @@ function App() {
           </Suspense>
         ) : (
           <Suspense fallback={<SelectedSkeleton />}>
-            <SelectedPlayers chosePlayers={chosePlayers} />
+            <SelectedPlayers
+              chosePlayers={chosePlayers}
+              setToggle={setToggle}
+              handleRemove={handleRemove}
+            />
           </Suspense>
         )}
       </div>

@@ -26,5 +26,8 @@
   @apply mt-10 flex justify-between items-center;
 }
 .btn-Add {
-  @apply border py-2 rounded-md cursor-pointer border-gray-400 hover:border-amber-600 hover:text-black transition-all duration-500 font-semibold w-44 mt-8;
+  @apply py-2 border border-white rounded-md bg-[#E7FE29] cursor-pointer hover:text-black transition-all duration-500 font-semibold w-44 hover:border-amber-600;
+}
+.add-Player {
+  @apply border border-gray-400  w-[200px] h-16 flex justify-center items-center mt-20 rounded-md;
 }

@@ -9,18 +9,26 @@ const Player = ({
   chosePlayers,
   setChosePlayers,
 }) => {
-  const [isSelected, setIsSelected] = useState(false);
-  const [showToast, setShowToast] = useState(false);
+  const [showWarningToast, setShowWarningToast] = useState(false);
+  const [showSuccessToast, setShowSuccessToast] = useState(false);
+
+  const isSelected = chosePlayers.find(
+    (chosePlayer) => chosePlayer.id === player.id
+  );
 
   const handleSelection = (playerData) => {
-    if (availableBalance >= playerData.price) {
-      setIsSelected(true),
-        setAvailableBalance((prev) => prev - playerData.price);
-      setChosePlayers([...chosePlayers, playerData]);
-    } else {
-      setShowToast(true);
+    if (availableBalance >= playerData.price && chosePlayers.length < 6) {
+      setAvailableBalance((prev) => prev - playerData.price);
+      const newPlayers = [...chosePlayers, playerData];
+      setChosePlayers(newPlayers);
+      setShowSuccessToast(true);
       setTimeout(() => {
-        setShowToast(false);
+        setShowSuccessToast(false);
+      }, 3000);
+    } else {
+      setShowWarningToast(true);
+      setTimeout(() => {
+        setShowWarningToast(false);
       }, 3000);
     }
   };
@@ -32,7 +40,7 @@ const Player = ({
         <img
           src={player.image}
           alt=""
-          className="w-[352px] h-[200px] object-cover"
+          className="w-[352px] h-[200px] object-cover rounded-lg"
         />
       </figure>
       {/* player details */}
@@ -77,11 +85,22 @@ const Player = ({
         </div>
       </div>
       {/* toast conditionally render */}
-      {showToast && (
+      {showSuccessToast && (
+        <div className="toast toast-top toast-center z-100 animate-bounce">
+          <div className="alert alert-success">
+            <span className="font-semibold text-lg">
+              Congratulations! You have selected {player.name}
+            </span>
+          </div>
+        </div>
+      )}
+      {showWarningToast && (
         <div className="toast toast-top toast-center z-100 animate-bounce">
           <div className="alert alert-warning">
-            <span className="font-bold text-lg">
-              You don't have sufficient coins to purchase
+            <span className="font-semibold text-lg">
+              {availableBalance <= player.price
+                ? ` You don't have sufficient coins to purchase`
+                : `You have already selected your desired six`}
             </span>
           </div>
         </div>
