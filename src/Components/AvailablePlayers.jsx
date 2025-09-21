@@ -1,7 +1,11 @@
 import { use } from "react";
 import Player from "./Player";
 
-const AvailablePlayers = ({ playersPromise, setAvailableBalance }) => {
+const AvailablePlayers = ({
+  playersPromise,
+  setAvailableBalance,
+  availableBalance,
+}) => {
   const playerData = use(playersPromise);
   //console.log(playerData);
 
@@ -12,6 +16,7 @@ const AvailablePlayers = ({ playersPromise, setAvailableBalance }) => {
           player={player}
           key={i}
           setAvailableBalance={setAvailableBalance}
+          availableBalance={availableBalance}
         />
       ))}
     </div>

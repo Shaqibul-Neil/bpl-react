@@ -30,7 +30,7 @@ function App() {
     <div className="container">
       <Header availableBalance={availableBalance} />
 
-      <div className="tab-section">
+      <div className="tab-section pt-20">
         <h2 className="section-title">
           {toggle ? `Available Players` : `Selected Players(4/6)`}
         </h2>
@@ -60,6 +60,7 @@ function App() {
             <AvailablePlayers
               playersPromise={playersPromise}
               setAvailableBalance={setAvailableBalance}
+              availableBalance={availableBalance}
             />
           </Suspense>
         ) : (

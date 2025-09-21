@@ -2,8 +2,21 @@ import playerIcon from "../assets/player.png";
 import flagIcon from "../assets/flag.png";
 import { useState } from "react";
 
-const Player = ({ player, setAvailableBalance }) => {
+const Player = ({ player, setAvailableBalance, availableBalance }) => {
   const [isSelected, setIsSelected] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+
+  const handleSelection = (playerData) => {
+    if (availableBalance >= playerData.price) {
+      setIsSelected(true),
+        setAvailableBalance((prev) => prev - playerData.price);
+    } else {
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+      }, 3000);
+    }
+  };
 
   return (
     <div className="card bg-base-100 shadow-xl p-4 mb-4">
@@ -23,7 +36,7 @@ const Player = ({ player, setAvailableBalance }) => {
           <h2 className="card-title">{player.name}</h2>
         </div>
         {/* player country role */}
-        <div className="flex items-center justify-between border-b-1 border-gray-300 pb-4">
+        <div className="flex items-center justify-between border-b border-gray-300 pb-4">
           <div className="flex items-center gap-3 ">
             <div>
               <img src={flagIcon} className="w-3" alt="" />
@@ -46,10 +59,9 @@ const Player = ({ player, setAvailableBalance }) => {
             <h3>Price: ${player.price}</h3>
             <button
               className="btn btn-soft"
-              disabled={isSelected ? true : false}
+              disabled={isSelected}
               onClick={() => {
-                setIsSelected(!isSelected);
-                setAvailableBalance((prev) => prev - player.price);
+                handleSelection(player);
               }}
             >
               {isSelected ? `Selected` : `Choose Player`}
@@ -57,6 +69,16 @@ const Player = ({ player, setAvailableBalance }) => {
           </div>
         </div>
       </div>
+      {/* toast conditionally render */}
+      {showToast && (
+        <div className="toast toast-top toast-center z-100 animate-bounce">
+          <div className="alert alert-warning">
+            <span className="font-bold text-lg">
+              You don't have sufficient coins to purchase
+            </span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
