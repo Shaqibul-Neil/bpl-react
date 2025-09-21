@@ -14,16 +14,21 @@ const fetchPlayers = async () => {
     console.log(error);
   }
 };
+//call fetchPlayers() outside the App to render the promise once
+//returning promise
+const playersPromise = fetchPlayers();
 
 function App() {
   //returning promise
-  const playersPromise = fetchPlayers();
+  // const playersPromise = fetchPlayers();
   //toggling
   const [toggle, setToggle] = useState(true);
+  //available balance
+  const [availableBalance, setAvailableBalance] = useState(6000000);
 
   return (
     <div className="container">
-      <Header />
+      <Header availableBalance={availableBalance} />
 
       <div className="tab-section">
         <h2 className="section-title">
@@ -52,7 +57,10 @@ function App() {
       <div className="mt-12">
         {toggle ? (
           <Suspense fallback={<Skeleton />}>
-            <AvailablePlayers playersPromise={playersPromise} />
+            <AvailablePlayers
+              playersPromise={playersPromise}
+              setAvailableBalance={setAvailableBalance}
+            />
           </Suspense>
         ) : (
           <Suspense fallback={"..."}>

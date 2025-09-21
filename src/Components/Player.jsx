@@ -1,7 +1,10 @@
 import playerIcon from "../assets/player.png";
 import flagIcon from "../assets/flag.png";
+import { useState } from "react";
 
-const Player = ({ player }) => {
+const Player = ({ player, setAvailableBalance }) => {
+  const [isSelected, setIsSelected] = useState(false);
+
   return (
     <div className="card bg-base-100 shadow-xl p-4 mb-4">
       {/* player image */}
@@ -39,9 +42,18 @@ const Player = ({ player }) => {
             <h3>{player.batting_style}</h3>
             <h3 className="text-gray-600 text-sm">{player.bowling_style}</h3>
           </div>
-          <div className="flex items-center justify-between text-base font-semibold card-actions items-center">
+          <div className="flex items-center justify-between text-base font-semibold card-actions">
             <h3>Price: ${player.price}</h3>
-            <button className="btn btn-soft">Choose Player</button>
+            <button
+              className="btn btn-soft"
+              disabled={isSelected ? true : false}
+              onClick={() => {
+                setIsSelected(!isSelected);
+                setAvailableBalance((prev) => prev - player.price);
+              }}
+            >
+              {isSelected ? `Selected` : `Choose Player`}
+            </button>
           </div>
         </div>
       </div>

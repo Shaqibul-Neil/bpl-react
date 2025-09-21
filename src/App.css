@@ -14,10 +14,10 @@
   @apply py-2 px-4 rounded-lg bg-gray-200;
 }
 .btn-Available {
-  @apply border px-8 py-2 rounded-tl-md rounded-bl-md cursor-pointer border-gray-400 hover:border-amber-600 hover:text-black transition-all duration-500 font-semibold;
+  @apply border w-36 py-2 rounded-tl-md rounded-bl-md cursor-pointer border-gray-400 hover:border-amber-600 hover:text-black transition-all duration-500 font-semibold;
 }
 .btn-Selected {
-  @apply border px-8 py-2 rounded-tr-md rounded-br-md cursor-pointer border-gray-400 hover:text-black transition-all duration-500 hover:border-amber-600 font-semibold;
+  @apply border w-36 py-2 rounded-tr-md rounded-br-md cursor-pointer border-gray-400 hover:text-black transition-all duration-500 hover:border-amber-600 font-semibold;
 }
 .section-title {
   @apply text-2xl font-bold;

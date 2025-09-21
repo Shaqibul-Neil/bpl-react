@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 
-const Header = () => {
+const Header = ({ availableBalance }) => {
   return (
     <div className="navbar">
       <div className="navbar-start">
@@ -63,7 +63,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="coin-btn">
-          <span>6000000000</span> Coin 🪙
+          <span>{availableBalance}</span> Coin 🪙
         </div>
       </div>
     </div>

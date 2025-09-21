@@ -1,14 +1,18 @@
 import { use } from "react";
 import Player from "./Player";
 
-const AvailablePlayers = ({ playersPromise }) => {
+const AvailablePlayers = ({ playersPromise, setAvailableBalance }) => {
   const playerData = use(playersPromise);
-  console.log(playerData);
+  //console.log(playerData);
 
   return (
     <div className="grid grid-cols-3 gap-3">
       {playerData.map((player, i) => (
-        <Player player={player} key={i} />
+        <Player
+          player={player}
+          key={i}
+          setAvailableBalance={setAvailableBalance}
+        />
       ))}
     </div>
   );
