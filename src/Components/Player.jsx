@@ -2,7 +2,13 @@ import playerIcon from "../assets/player.png";
 import flagIcon from "../assets/flag.png";
 import { useState } from "react";
 
-const Player = ({ player, setAvailableBalance, availableBalance }) => {
+const Player = ({
+  player,
+  setAvailableBalance,
+  availableBalance,
+  chosePlayers,
+  setChosePlayers,
+}) => {
   const [isSelected, setIsSelected] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
@@ -10,6 +16,7 @@ const Player = ({ player, setAvailableBalance, availableBalance }) => {
     if (availableBalance >= playerData.price) {
       setIsSelected(true),
         setAvailableBalance((prev) => prev - playerData.price);
+      setChosePlayers([...chosePlayers, playerData]);
     } else {
       setShowToast(true);
       setTimeout(() => {

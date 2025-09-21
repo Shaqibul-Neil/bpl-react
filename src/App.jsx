@@ -25,6 +25,9 @@ function App() {
   const [toggle, setToggle] = useState(true);
   //available balance
   const [availableBalance, setAvailableBalance] = useState(6000000);
+  //selecting players
+  const [chosePlayers, setChosePlayers] = useState([]);
+  console.log(chosePlayers);
 
   return (
     <div className="container">
@@ -61,11 +64,13 @@ function App() {
               playersPromise={playersPromise}
               setAvailableBalance={setAvailableBalance}
               availableBalance={availableBalance}
+              chosePlayers={chosePlayers}
+              setChosePlayers={setChosePlayers}
             />
           </Suspense>
         ) : (
           <Suspense fallback={"..."}>
-            <SelectedPlayers />
+            <SelectedPlayers chosePlayers={chosePlayers} />
           </Suspense>
         )}
       </div>
