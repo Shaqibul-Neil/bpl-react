@@ -3,10 +3,14 @@ import Header from "./Components/Header";
 import AvailablePlayers from "./Components/AvailablePlayers";
 import SelectedPlayers from "./Components/SelectedPlayers";
 import Skeleton from "./Components/Skeleton";
+import SelectedSkeleton from "./Components/SelectedSkeleton";
 import { Suspense, useState } from "react";
 
 const fetchPlayers = async () => {
   try {
+    //5 second delay
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
     const res = await fetch("/players.json");
     const json = await res.json();
     return json;
@@ -35,7 +39,9 @@ function App() {
 
       <div className="tab-section pt-20">
         <h2 className="section-title">
-          {toggle ? `Available Players` : `Selected Players(4/6)`}
+          {toggle
+            ? `Available Players`
+            : `Selected Players (${chosePlayers.length}/6)`}
         </h2>
         <div className="flex">
           <button
@@ -52,7 +58,7 @@ function App() {
             }`}
             onClick={() => setToggle(false)}
           >
-            Selected <span>(0)</span>
+            Selected <span>({chosePlayers.length})</span>
           </button>
         </div>
       </div>
@@ -69,7 +75,7 @@ function App() {
             />
           </Suspense>
         ) : (
-          <Suspense fallback={"..."}>
+          <Suspense fallback={<SelectedSkeleton />}>
             <SelectedPlayers chosePlayers={chosePlayers} />
           </Suspense>
         )}
