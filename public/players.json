@@ -1,0 +1,202 @@
+[
+  {
+    "image": "https://i.ibb.co.com/999TgLCK/Mustafizur-Rahman-1-NOW.webp",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "playing_role": "Bowler",
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Left-arm Fast Medium",
+    "rating": 89,
+    "price": 1450000
+  },
+  {
+    "image": "https://i.ibb.co.com/XZvBJtLV/tamim-iqbal-daily-sun.jpg",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "playing_role": "Wicketkeeper Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "N/A",
+    "rating": 88,
+    "price": 1400000
+  },
+  {
+    "image": "https://i.ibb.co.com/tpfZRwGf/Taskin-ds.jpg",
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "playing_role": "Bowler",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "rating": 84,
+    "price": 900000
+  },
+  {
+    "image": "https://i.ibb.co.com/GvyqF0PT/Tawhid-Hridoy.jpg",
+    "name": "Towhid Hridoy",
+    "country": "Bangladesh",
+    "playing_role": "Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "N/A",
+    "rating": 80,
+    "price": 1200000
+  },
+  {
+    "image": "https://i.ibb.co.com/zVhNdJMb/1752774156.jpg",
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "playing_role": "All-Rounder",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "rating": 92,
+    "price": 1850000
+  },
+  {
+    "image": "https://i.ibb.co.com/0yxZxVPR/gayle.webp",
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "playing_role": "Batsman",
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Right-arm Offbreak",
+    "rating": 94,
+    "price": 1900000
+  },
+  {
+    "image": "https://i.ibb.co.com/qY4PtMbC/152559227.webp",
+    "name": "Kieron Pollard",
+    "country": "West Indies",
+    "playing_role": "All-Rounder",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Medium",
+    "rating": 91,
+    "price": 1700000
+  },
+  {
+    "image": "https://i.ibb.co.com/Txr0TfsR/Jos-Buttler-highlights-on-BCCIs-new-family-rule.webp",
+    "name": "Jos Buttler",
+    "country": "England",
+    "playing_role": "Wicketkeeper Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "N/A",
+    "rating": 93,
+    "price": 1800000
+  },
+  {
+    "image": "https://i.ibb.co.com/pjjfWd0j/cover-1651140312-Untitled-1.jpg",
+    "name": "Ben Stokes",
+    "country": "England",
+    "playing_role": "All-Rounder",
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Right-arm Fast Medium",
+    "rating": 92,
+    "price": 1750000
+  },
+  {
+    "image": "https://i.ibb.co.com/YFDkqHTB/Eoin-Morgan-1.jpg",
+    "name": "Eoin Morgan",
+    "country": "England",
+    "playing_role": "Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "N/A",
+    "rating": 89,
+    "price": 1600000
+  },
+  {
+    "image": "https://i.ibb.co.com/xth8qVhb/departing-david-warner-confirms-his-odi-retirement-v0-xqx-IRtygj-Rd-RMn-Q2-YO8c-V-HYv-WTBgct-H197-Gz.webp",
+    "name": "David Warner",
+    "country": "Australia",
+    "playing_role": "Batsman",
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Legbreak",
+    "rating": 94,
+    "price": 1800000
+  },
+  {
+    "image": "https://i.ibb.co.com/ZzQLVxCx/Glenn-Maxwell-thumbnail.jpg",
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "playing_role": "All-Rounder",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Offbreak",
+    "rating": 93,
+    "price": 1750000
+  },
+  {
+    "image": "https://i.ibb.co.com/ccLB3VDT/images.jpg",
+    "name": "Aaron Finch",
+    "country": "Australia",
+    "playing_role": "Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Left-arm Orthodox",
+    "rating": 89,
+    "price": 1600000
+  },
+  {
+    "image": "https://i.ibb.co.com/Q7P3gC96/pat-cummins-becomes-captain-b44c847b-84e5-464c-af2b-2877eb4beb1e.webp",
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "playing_role": "Bowler",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "rating": 91,
+    "price": 1500000
+  },
+  {
+    "image": "https://i.ibb.co.com/Fb3vhmth/skysports-chris-woakes-england-vs-west-indies-6626105.jpg",
+    "name": "Chris Woakes",
+    "country": "England",
+    "playing_role": "All-Rounder",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Fast Medium",
+    "rating": 87,
+    "price": 1400000
+  },
+  {
+    "image": "https://i.ibb.co.com/9mnWpfQx/cricket-WIS-ENG-4-TH-T20-I-18-1643635832339-1643635853548.jpg",
+    "name": "Jason Holder",
+    "country": "West Indies",
+    "playing_role": "All-Rounder",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Medium Fast",
+    "rating": 85,
+    "price": 1250000
+  },
+  {
+    "image": "https://i.ibb.co.com/Q31xgK7z/skysports-shai-hope-windies-hundred-4086531.jpg",
+    "name": "Shai Hope",
+    "country": "West Indies",
+    "playing_role": "Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "N/A",
+    "rating": 84,
+    "price": 1200000
+  },
+  {
+    "image": "https://i.ibb.co.com/VcbGgcLW/skysports-sam-billings-billings-5179578.jpg",
+    "name": "Sam Billings",
+    "country": "England",
+    "playing_role": "Wicketkeeper Batsman",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "N/A",
+    "rating": 83,
+    "price": 1100000
+  },
+  {
+    "image": "https://i.ibb.co.com/XrGJK4Q0/starc-finishes-as-australias-second-highest-wicket-taker-in-the-format-behind-only-adam-zampa.webp",
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "playing_role": "Bowler",
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Left-arm Fast",
+    "rating": 92,
+    "price": 1550000
+  },
+  {
+    "image": "https://i.ibb.co.com/hR7fsFdN/305555-6.webp",
+    "name": "Roston Chase",
+    "country": "West Indies",
+    "playing_role": "All-Rounder",
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Offbreak",
+    "rating": 82,
+    "price": 950000
+  }
+]
